@@ -6,11 +6,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - name
+      - main
       - 'dev-*'
       - 'feat/**'
-    paths-ignore:
-      - '.github/worflows/*'
 jobs:
   deploy:
     runs-on: ubuntu-latest
